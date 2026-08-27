@@ -1,4 +1,4 @@
 # README
-I just want to test a GitHub actions for scheduling merges.
+I just want to test a GitHub action for scheduling merges.
 
 This is just an edit.
