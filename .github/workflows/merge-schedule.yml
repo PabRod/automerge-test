@@ -8,7 +8,8 @@ on:
       - synchronize
   schedule:
     # https://crontab.guru/every-hour
-    - cron: '0 * * * *'
+    # Avoids the stampede at 0 * * * *
+    - cron: '57 * * * *'
 
 # Needed so the action can comment, label and merge.
 permissions:
