@@ -10,6 +10,11 @@ on:
     # https://crontab.guru/every-hour
     - cron: '0 * * * *'
 
+# Needed so the action can comment, label and merge.
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   merge_schedule:
     runs-on: ubuntu-latest
