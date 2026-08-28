@@ -8,8 +8,8 @@ on:
       - synchronize
   schedule:
     # https://crontab.guru/every-hour
-    # Avoids the stampede at 0 * * * *
-    - cron: '57 * * * *'
+    # Runs at 37 minutes past the hour (to avoid rush hour at 0 or 30), every 4 hours
+    - cron: '37 */4 * * *'
 
 # Needed so the action can comment, label and merge.
 permissions:
